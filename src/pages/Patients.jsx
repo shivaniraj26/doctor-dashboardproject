@@ -165,7 +165,7 @@ export default function Patients(){
             <tr>
               <th>Patient</th>
               <th>Phone</th>
-              <th>Notes</th>
+              <th>Problem</th>
               <th>Status</th>
               <th style={{width:140}}>Actions</th>
             </tr>
@@ -229,7 +229,7 @@ export default function Patients(){
               <option>Active</option>
               <option>Inactive</option>
             </select>
-            <input placeholder="Notes" value={form.notes} onChange={e=>setForm({...form, notes:e.target.value})} style={{padding:10, borderRadius:8, border:"1px solid #d1d5db"}} />
+            <input placeholder="Problem" value={form.problem} onChange={e=>setForm({...form, notes:e.target.value})} style={{padding:10, borderRadius:8, border:"1px solid #d1d5db"}} />
           </div>
 
           <div style={{display:"flex", justifyContent:"flex-end", gap:8, marginTop:12}}>
